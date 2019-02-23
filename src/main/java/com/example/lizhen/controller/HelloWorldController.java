@@ -1,4 +1,4 @@
-package com.example.lizhen;
+package com.example.lizhen.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
     @RequestMapping("/hello")
     public String index() {
-        return "Hello World";
+        return "lizhen Hello World";
     }
 }
