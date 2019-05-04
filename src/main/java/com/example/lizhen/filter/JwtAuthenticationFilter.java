@@ -30,7 +30,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         //如果jwt令牌通过了检测, 那么就把request传递给后面的RESTful api
         filterChain.doFilter(request, response);
     }
-    //我们只对地址 /api 开头的api检查jwt. 不然的话登录/login也需要jwt
     private boolean isProtectedUrl(HttpServletRequest request) {
         return pathMatcher.match("/**", request.getServletPath());
     }
