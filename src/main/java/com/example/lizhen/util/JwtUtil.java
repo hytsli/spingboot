@@ -12,7 +12,6 @@ public class JwtUtil {
 
     public static String generateToken(String username) {
         HashMap<String, Object> map = new HashMap<>();
-        //you can put any data in the map
         map.put("username", username);
         String jwt = Jwts.builder()
                 .setClaims(map)
